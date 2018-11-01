@@ -1,7 +1,4 @@
 ﻿using System.Collections.Generic;
-using SugarLevelTracker.Data;
-using SugarLevelTracker.Models;
-
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
@@ -10,9 +7,13 @@ using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
 
+using SugarLevelTracker.Data;
+using SugarLevelTracker.Models;
+
+
 namespace SugarLevelTracker.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class SugarLevelsController : ApiController
     {
         private readonly ApplicationDbContext _db = new ApplicationDbContext();
