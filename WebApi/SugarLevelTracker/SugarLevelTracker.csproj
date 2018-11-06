@@ -216,8 +216,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\index.html" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="index.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -234,6 +236,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201807062218182_Initial.resx">
